@@ -1,0 +1,1 @@
+UPDATE subscriptions SET name = 'Premium ++' WHERE id = (SELECT * FROM(SELECT id FROM subscriptions ORDER BY id  DESC LIMIT 1) AS X);

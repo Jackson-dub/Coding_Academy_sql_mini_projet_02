@@ -1,0 +1,1 @@
+SELECT f.id AS "Floor number", COUNT(room_number) AS "Total number of rooms", COUNT(seats) AS "Total number of seats" FROM rooms f INNER JOIN(SELECT floor FROM rooms) AS sub ON sub.floor  = f.id GROUP BY id ORDER BY COUNT(seats) ASC;

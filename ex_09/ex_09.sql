@@ -1,0 +1,1 @@
+SELECT title,min_duration FROM movies ORDER BY LENGTH(title) ASC, min_duration ASC;
